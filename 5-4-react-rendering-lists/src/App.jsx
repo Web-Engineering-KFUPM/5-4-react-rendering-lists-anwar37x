@@ -137,15 +137,16 @@ export default function App() {
         <p className="subtitle">Lists • Keys • Conditional Rendering</p>
       </header>
 
-      <section className="grid">
-        {/* TODO (TASK 1): Render all courses using courses.map(...)
-      For each course render <CourseCard /> and pass:
-        - key={course.id}
-        - course={course}
-        - index={idx}
-        - onMutateCourse={mutateCourseByIndex}
-  */}
-      </section>
+<section className="grid">
+  {courses.map((course, idx) => (
+    <CourseCard
+      key={course.id}
+      course={course}
+      index={idx}
+      onMutateCourse={mutateCourseByIndex}
+    />
+  ))}
+</section>
     </main>
   );
 }
