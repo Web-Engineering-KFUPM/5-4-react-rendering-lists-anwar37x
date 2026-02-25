@@ -61,4 +61,5 @@ export default function CourseCard({ course, index, onMutateCourse }) {
       </section>
     </article>
   );
+  
 }
